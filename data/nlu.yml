@@ -1,0 +1,113 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_apod
+  examples: |
+    - Show me the Astronomy Picture of the Day for [2021-06-20](date)
+    - What was the Astronomy Picture of the Day on [2022-01-15](date)?
+    - I want to see the picture for [2020-12-01](date)
+    - Give me the APOD for [2023-05-10](date)
+    - Show me the picture of the day for [2019-07-16](date)
+    - I want to see the APOD for [2018-11-01](date)
+    - Can you fetch the picture for [2022-02-20](date)?
+    - Get me the Astronomy Picture of the Day for [2021-03-25](date)
+    - I would like to see the APOD on [2020-04-13](date)
+    - Provide the APOD for [2017-08-21](date)
+    - Show me APOD for [2019-12-25](date)
+    - What was the APOD on [2020-01-01](date)?
+    - Fetch the APOD for [2021-05-05](date)
+    - Can you show the APOD for [2022-09-30](date)?
+    - I want to know the picture of the day on [2023-06-14](date)
+
+regex:
+  - name: date
+    pattern: '\d{4}-\d{2}-\d{2}'
